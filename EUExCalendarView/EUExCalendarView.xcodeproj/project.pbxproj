@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EB62BEF1A9F54D9009C238A /* ABCalendarPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BCF1A9F54D9009C238A /* ABCalendarPicker.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EB62BF01A9F54D9009C238A /* ABCalendarPickerDefaultDaysProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BD31A9F54D9009C238A /* ABCalendarPickerDefaultDaysProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EB62BF11A9F54D9009C238A /* ABCalendarPickerDefaultErasProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BD51A9F54D9009C238A /* ABCalendarPickerDefaultErasProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EB62BF21A9F54D9009C238A /* ABCalendarPickerDefaultMonthsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BD71A9F54D9009C238A /* ABCalendarPickerDefaultMonthsProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EB62BF31A9F54D9009C238A /* ABCalendarPickerDefaultSeasonedMonthsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BD91A9F54D9009C238A /* ABCalendarPickerDefaultSeasonedMonthsProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EB62BF41A9F54D9009C238A /* ABCalendarPickerDefaultStyleProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BDB1A9F54D9009C238A /* ABCalendarPickerDefaultStyleProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EB62BF51A9F54D9009C238A /* ABCalendarPickerDefaultTripleWeekdaysProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BDD1A9F54D9009C238A /* ABCalendarPickerDefaultTripleWeekdaysProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EB62BF61A9F54D9009C238A /* ABCalendarPickerDefaultWeekdaysProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BDF1A9F54D9009C238A /* ABCalendarPickerDefaultWeekdaysProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EB62BF71A9F54D9009C238A /* ABCalendarPickerDefaultYearsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BE11A9F54D9009C238A /* ABCalendarPickerDefaultYearsProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EB62BF81A9F54D9009C238A /* ABViewPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BE51A9F54D9009C238A /* ABViewPool.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EB62BF91A9F54D9009C238A /* UIMyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BE71A9F54D9009C238A /* UIMyButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6EB62BFA1A9F54D9009C238A /* EUExCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BE91A9F54D9009C238A /* EUExCalendarView.m */; };
+		6EE003951A6BFD9E00BD3711 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE003941A6BFD9E00BD3711 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6EE0038F1A6BFD9E00BD3711 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6EB62BCD1A9F54D9009C238A /* ABCalendarPicker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ABCalendarPicker-Prefix.pch"; sourceTree = "<group>"; };
+		6EB62BCE1A9F54D9009C238A /* ABCalendarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPicker.h; sourceTree = "<group>"; };
+		6EB62BCF1A9F54D9009C238A /* ABCalendarPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPicker.m; sourceTree = "<group>"; };
+		6EB62BD01A9F54D9009C238A /* ABCalendarPickerDataSourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDataSourceProtocol.h; sourceTree = "<group>"; };
+		6EB62BD11A9F54D9009C238A /* ABCalendarPickerDateProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDateProviderProtocol.h; sourceTree = "<group>"; };
+		6EB62BD21A9F54D9009C238A /* ABCalendarPickerDefaultDaysProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDefaultDaysProvider.h; sourceTree = "<group>"; };
+		6EB62BD31A9F54D9009C238A /* ABCalendarPickerDefaultDaysProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPickerDefaultDaysProvider.m; sourceTree = "<group>"; };
+		6EB62BD41A9F54D9009C238A /* ABCalendarPickerDefaultErasProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDefaultErasProvider.h; sourceTree = "<group>"; };
+		6EB62BD51A9F54D9009C238A /* ABCalendarPickerDefaultErasProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPickerDefaultErasProvider.m; sourceTree = "<group>"; };
+		6EB62BD61A9F54D9009C238A /* ABCalendarPickerDefaultMonthsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDefaultMonthsProvider.h; sourceTree = "<group>"; };
+		6EB62BD71A9F54D9009C238A /* ABCalendarPickerDefaultMonthsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPickerDefaultMonthsProvider.m; sourceTree = "<group>"; };
+		6EB62BD81A9F54D9009C238A /* ABCalendarPickerDefaultSeasonedMonthsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDefaultSeasonedMonthsProvider.h; sourceTree = "<group>"; };
+		6EB62BD91A9F54D9009C238A /* ABCalendarPickerDefaultSeasonedMonthsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPickerDefaultSeasonedMonthsProvider.m; sourceTree = "<group>"; };
+		6EB62BDA1A9F54D9009C238A /* ABCalendarPickerDefaultStyleProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDefaultStyleProvider.h; sourceTree = "<group>"; };
+		6EB62BDB1A9F54D9009C238A /* ABCalendarPickerDefaultStyleProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPickerDefaultStyleProvider.m; sourceTree = "<group>"; };
+		6EB62BDC1A9F54D9009C238A /* ABCalendarPickerDefaultTripleWeekdaysProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDefaultTripleWeekdaysProvider.h; sourceTree = "<group>"; };
+		6EB62BDD1A9F54D9009C238A /* ABCalendarPickerDefaultTripleWeekdaysProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPickerDefaultTripleWeekdaysProvider.m; sourceTree = "<group>"; };
+		6EB62BDE1A9F54D9009C238A /* ABCalendarPickerDefaultWeekdaysProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDefaultWeekdaysProvider.h; sourceTree = "<group>"; };
+		6EB62BDF1A9F54D9009C238A /* ABCalendarPickerDefaultWeekdaysProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPickerDefaultWeekdaysProvider.m; sourceTree = "<group>"; };
+		6EB62BE01A9F54D9009C238A /* ABCalendarPickerDefaultYearsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDefaultYearsProvider.h; sourceTree = "<group>"; };
+		6EB62BE11A9F54D9009C238A /* ABCalendarPickerDefaultYearsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPickerDefaultYearsProvider.m; sourceTree = "<group>"; };
+		6EB62BE21A9F54D9009C238A /* ABCalendarPickerDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDelegateProtocol.h; sourceTree = "<group>"; };
+		6EB62BE31A9F54D9009C238A /* ABCalendarPickerStyleProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerStyleProviderProtocol.h; sourceTree = "<group>"; };
+		6EB62BE41A9F54D9009C238A /* ABViewPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABViewPool.h; sourceTree = "<group>"; };
+		6EB62BE51A9F54D9009C238A /* ABViewPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABViewPool.m; sourceTree = "<group>"; };
+		6EB62BE61A9F54D9009C238A /* UIMyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMyButton.h; sourceTree = "<group>"; };
+		6EB62BE71A9F54D9009C238A /* UIMyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMyButton.m; sourceTree = "<group>"; };
+		6EB62BE81A9F54D9009C238A /* EUExCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExCalendarView.h; sourceTree = "<group>"; };
+		6EB62BE91A9F54D9009C238A /* EUExCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUExCalendarView.m; sourceTree = "<group>"; };
+		6EE003911A6BFD9E00BD3711 /* libuexCalendarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexCalendarView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE003941A6BFD9E00BD3711 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6EE003981A6BFD9E00BD3711 /* EUExCalendarView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EUExCalendarView-Prefix.pch"; sourceTree = "<group>"; };
+		6EE003A21A6BFD9E00BD3711 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6EE003A51A6BFD9E00BD3711 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6EE003BB1A6BFE1100BD3711 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
+		6EE003BC1A6BFE1100BD3711 /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
+		6EE003BD1A6BFE1100BD3711 /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
+		6EE003BE1A6BFE1100BD3711 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		6EE003C01A6BFE1100BD3711 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		6EE003C11A6BFE1100BD3711 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		6EE003C21A6BFE1100BD3711 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		6EE003C31A6BFE1100BD3711 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		6EE003C41A6BFE1100BD3711 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		6EE003C51A6BFE1100BD3711 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		6EE003C61A6BFE1100BD3711 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		6EE003C71A6BFE1100BD3711 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		6EE003C81A6BFE1100BD3711 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		6EE003C91A6BFE1100BD3711 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		6EE003CA1A6BFE1100BD3711 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		6EE003CB1A6BFE1100BD3711 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		6EE003CC1A6BFE1100BD3711 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		6EE003CD1A6BFE1100BD3711 /* WidgetOneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetOneDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EE0038E1A6BFD9E00BD3711 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE003951A6BFD9E00BD3711 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EB62BCB1A9F54D9009C238A /* EUExCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				6EB62BCC1A9F54D9009C238A /* ABCalendarPicker */,
+				6EB62BE81A9F54D9009C238A /* EUExCalendarView.h */,
+				6EB62BE91A9F54D9009C238A /* EUExCalendarView.m */,
+			);
+			path = EUExCalendarView;
+			sourceTree = "<group>";
+		};
+		6EB62BCC1A9F54D9009C238A /* ABCalendarPicker */ = {
+			isa = PBXGroup;
+			children = (
+				6EB62BCD1A9F54D9009C238A /* ABCalendarPicker-Prefix.pch */,
+				6EB62BCE1A9F54D9009C238A /* ABCalendarPicker.h */,
+				6EB62BCF1A9F54D9009C238A /* ABCalendarPicker.m */,
+				6EB62BD01A9F54D9009C238A /* ABCalendarPickerDataSourceProtocol.h */,
+				6EB62BD11A9F54D9009C238A /* ABCalendarPickerDateProviderProtocol.h */,
+				6EB62BD21A9F54D9009C238A /* ABCalendarPickerDefaultDaysProvider.h */,
+				6EB62BD31A9F54D9009C238A /* ABCalendarPickerDefaultDaysProvider.m */,
+				6EB62BD41A9F54D9009C238A /* ABCalendarPickerDefaultErasProvider.h */,
+				6EB62BD51A9F54D9009C238A /* ABCalendarPickerDefaultErasProvider.m */,
+				6EB62BD61A9F54D9009C238A /* ABCalendarPickerDefaultMonthsProvider.h */,
+				6EB62BD71A9F54D9009C238A /* ABCalendarPickerDefaultMonthsProvider.m */,
+				6EB62BD81A9F54D9009C238A /* ABCalendarPickerDefaultSeasonedMonthsProvider.h */,
+				6EB62BD91A9F54D9009C238A /* ABCalendarPickerDefaultSeasonedMonthsProvider.m */,
+				6EB62BDA1A9F54D9009C238A /* ABCalendarPickerDefaultStyleProvider.h */,
+				6EB62BDB1A9F54D9009C238A /* ABCalendarPickerDefaultStyleProvider.m */,
+				6EB62BDC1A9F54D9009C238A /* ABCalendarPickerDefaultTripleWeekdaysProvider.h */,
+				6EB62BDD1A9F54D9009C238A /* ABCalendarPickerDefaultTripleWeekdaysProvider.m */,
+				6EB62BDE1A9F54D9009C238A /* ABCalendarPickerDefaultWeekdaysProvider.h */,
+				6EB62BDF1A9F54D9009C238A /* ABCalendarPickerDefaultWeekdaysProvider.m */,
+				6EB62BE01A9F54D9009C238A /* ABCalendarPickerDefaultYearsProvider.h */,
+				6EB62BE11A9F54D9009C238A /* ABCalendarPickerDefaultYearsProvider.m */,
+				6EB62BE21A9F54D9009C238A /* ABCalendarPickerDelegateProtocol.h */,
+				6EB62BE31A9F54D9009C238A /* ABCalendarPickerStyleProviderProtocol.h */,
+				6EB62BE41A9F54D9009C238A /* ABViewPool.h */,
+				6EB62BE51A9F54D9009C238A /* ABViewPool.m */,
+				6EB62BE61A9F54D9009C238A /* UIMyButton.h */,
+				6EB62BE71A9F54D9009C238A /* UIMyButton.m */,
+			);
+			path = ABCalendarPicker;
+			sourceTree = "<group>";
+		};
+		6EE003881A6BFD9E00BD3711 = {
+			isa = PBXGroup;
+			children = (
+				6EE003961A6BFD9E00BD3711 /* EUExCalendarView */,
+				6EE003931A6BFD9E00BD3711 /* Frameworks */,
+				6EE003921A6BFD9E00BD3711 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EE003921A6BFD9E00BD3711 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EE003911A6BFD9E00BD3711 /* libuexCalendarView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EE003931A6BFD9E00BD3711 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EE003941A6BFD9E00BD3711 /* Foundation.framework */,
+				6EE003A21A6BFD9E00BD3711 /* XCTest.framework */,
+				6EE003A51A6BFD9E00BD3711 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EE003961A6BFD9E00BD3711 /* EUExCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				6EB62BCB1A9F54D9009C238A /* EUExCalendarView */,
+				6EE003BA1A6BFE1100BD3711 /* engineHeader */,
+				6EE003971A6BFD9E00BD3711 /* Supporting Files */,
+			);
+			path = EUExCalendarView;
+			sourceTree = "<group>";
+		};
+		6EE003971A6BFD9E00BD3711 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EE003981A6BFD9E00BD3711 /* EUExCalendarView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EE003BA1A6BFE1100BD3711 /* engineHeader */ = {
+			isa = PBXGroup;
+			children = (
+				6EE003BB1A6BFE1100BD3711 /* EUExBase.h */,
+				6EE003BC1A6BFE1100BD3711 /* EUExBaseDefine.h */,
+				6EE003BD1A6BFE1100BD3711 /* EUtility.h */,
+				6EE003BE1A6BFE1100BD3711 /* JSON.h */,
+				6EE003BF1A6BFE1100BD3711 /* SBJson */,
+				6EE003CD1A6BFE1100BD3711 /* WidgetOneDelegate.h */,
+			);
+			path = engineHeader;
+			sourceTree = "<group>";
+		};
+		6EE003BF1A6BFE1100BD3711 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				6EE003C01A6BFE1100BD3711 /* NSObject+SBJson.h */,
+				6EE003C11A6BFE1100BD3711 /* SBJson.h */,
+				6EE003C21A6BFE1100BD3711 /* SBJsonParser.h */,
+				6EE003C31A6BFE1100BD3711 /* SBJsonStreamParser.h */,
+				6EE003C41A6BFE1100BD3711 /* SBJsonStreamParserAccumulator.h */,
+				6EE003C51A6BFE1100BD3711 /* SBJsonStreamParserAdapter.h */,
+				6EE003C61A6BFE1100BD3711 /* SBJsonStreamParserState.h */,
+				6EE003C71A6BFE1100BD3711 /* SBJsonStreamWriter.h */,
+				6EE003C81A6BFE1100BD3711 /* SBJsonStreamWriterAccumulator.h */,
+				6EE003C91A6BFE1100BD3711 /* SBJsonStreamWriterState.h */,
+				6EE003CA1A6BFE1100BD3711 /* SBJsonTokeniser.h */,
+				6EE003CB1A6BFE1100BD3711 /* SBJsonUTF8Stream.h */,
+				6EE003CC1A6BFE1100BD3711 /* SBJsonWriter.h */,
+			);
+			path = SBJson;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EE003901A6BFD9E00BD3711 /* EUExCalendarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE003B41A6BFD9E00BD3711 /* Build configuration list for PBXNativeTarget "EUExCalendarView" */;
+			buildPhases = (
+				6EE0038D1A6BFD9E00BD3711 /* Sources */,
+				6EE0038E1A6BFD9E00BD3711 /* Frameworks */,
+				6EE0038F1A6BFD9E00BD3711 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EUExCalendarView;
+			productName = EUExCalendarView;
+			productReference = 6EE003911A6BFD9E00BD3711 /* libuexCalendarView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EE003891A6BFD9E00BD3711 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hongbao.cui;
+			};
+			buildConfigurationList = 6EE0038C1A6BFD9E00BD3711 /* Build configuration list for PBXProject "EUExCalendarView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6EE003881A6BFD9E00BD3711;
+			productRefGroup = 6EE003921A6BFD9E00BD3711 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EE003901A6BFD9E00BD3711 /* EUExCalendarView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EE0038D1A6BFD9E00BD3711 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB62BF51A9F54D9009C238A /* ABCalendarPickerDefaultTripleWeekdaysProvider.m in Sources */,
+				6EB62BF21A9F54D9009C238A /* ABCalendarPickerDefaultMonthsProvider.m in Sources */,
+				6EB62BF01A9F54D9009C238A /* ABCalendarPickerDefaultDaysProvider.m in Sources */,
+				6EB62BFA1A9F54D9009C238A /* EUExCalendarView.m in Sources */,
+				6EB62BF91A9F54D9009C238A /* UIMyButton.m in Sources */,
+				6EB62BF71A9F54D9009C238A /* ABCalendarPickerDefaultYearsProvider.m in Sources */,
+				6EB62BEF1A9F54D9009C238A /* ABCalendarPicker.m in Sources */,
+				6EB62BF81A9F54D9009C238A /* ABViewPool.m in Sources */,
+				6EB62BF31A9F54D9009C238A /* ABCalendarPickerDefaultSeasonedMonthsProvider.m in Sources */,
+				6EB62BF61A9F54D9009C238A /* ABCalendarPickerDefaultWeekdaysProvider.m in Sources */,
+				6EB62BF41A9F54D9009C238A /* ABCalendarPickerDefaultStyleProvider.m in Sources */,
+				6EB62BF11A9F54D9009C238A /* ABCalendarPickerDefaultErasProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6EE003B21A6BFD9E00BD3711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexCalendarView";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = uexCalendarView;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6EE003B31A6BFD9E00BD3711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexCalendarView";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				PRODUCT_NAME = uexCalendarView;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EE003B51A6BFD9E00BD3711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/EUExCalendarView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExCalendarView/EUExCalendarView-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = uexCalendarView;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6EE003B61A6BFD9E00BD3711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/EUExCalendarView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExCalendarView/EUExCalendarView-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = uexCalendarView;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EE0038C1A6BFD9E00BD3711 /* Build configuration list for PBXProject "EUExCalendarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE003B21A6BFD9E00BD3711 /* Debug */,
+				6EE003B31A6BFD9E00BD3711 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE003B41A6BFD9E00BD3711 /* Build configuration list for PBXNativeTarget "EUExCalendarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE003B51A6BFD9E00BD3711 /* Debug */,
+				6EE003B61A6BFD9E00BD3711 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EE003891A6BFD9E00BD3711 /* Project object */;
+}
