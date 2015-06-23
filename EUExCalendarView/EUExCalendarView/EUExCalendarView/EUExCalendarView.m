@@ -99,7 +99,7 @@
     NSMutableDictionary *dateDict = [NSMutableDictionary dictionaryWithCapacity:1];
     NSDictionary *dict = [NSDictionary dictionaryWithObjects:array forKeys:keys];
     [dateDict setObject:dict forKey:@"date"];
-    NSString *jsonStr = [NSString stringWithFormat:@"{\"date\":{\"year\":\"%@\",\"moth\":\"%@\",\"day\":\"%@\"}}",[array objectAtIndex:0],[array objectAtIndex:1],[array objectAtIndex:2]];
+    NSString *jsonStr = [NSString stringWithFormat:@"{\"date\":{\"year\":\"%@\",\"month\":\"%@\",\"day\":\"%@\"}}",[array objectAtIndex:0],[array objectAtIndex:1],[array objectAtIndex:2]];
     NSString *json = [NSString stringWithFormat:@"uexCalendarView.onItemClick('%@')",jsonStr];
 //    [self.meBrwView stringByEvaluatingJavaScriptFromString:json];
     [EUtility brwView:self.meBrwView evaluateScript:json];
