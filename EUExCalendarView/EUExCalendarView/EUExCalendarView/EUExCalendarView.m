@@ -38,7 +38,7 @@
 }
 -(void)open:(NSMutableArray *)array{
     if ([array count] ==0) {
-        NSLog(@"paragms is error!!");
+        NSLog(@"params is error!!");
         return;
     }
     NSDictionary *dict = [[array objectAtIndex:0] JSONValue];
@@ -69,15 +69,15 @@
 }
 -(void)setSelectedDate:(NSMutableArray *)argurs{
     if ([argurs count] ==0) {
-        NSLog(@"paragms is error!!");
+        NSLog(@"params is error!!");
         return;
     }
     NSDictionary *dict = [[argurs objectAtIndex:0] JSONValue];
     NSDictionary *dateDict = [dict objectForKey:@"date"];
     NSString *day = [dateDict objectForKey:@"day"];
-    NSString *moth = [dateDict objectForKey:@"moth"];
+    NSString *month = [dateDict objectForKey:@"month"];
     NSString *year = [dateDict objectForKey:@"year"];
-    NSString *dateFormate = [NSString stringWithFormat:@"%@-%@-%@",year,moth,day];
+    NSString *dateFormate = [NSString stringWithFormat:@"%@-%@-%@",year,month,day];
     NSDate *date = [self convertDateFromString:dateFormate];
     [self.calendarPicker setDate:date andState:ABCalendarPickerStateDays animated:YES];
 }
@@ -95,7 +95,7 @@
     //回调函数
     NSString *stringFromDate = [self stringFromDate:date];
     NSArray *array = [stringFromDate componentsSeparatedByString:@"-"];
-    NSArray *keys = [NSArray arrayWithObjects:@"year",@"moth",@"day", nil];
+    NSArray *keys = [NSArray arrayWithObjects:@"year",@"month",@"day", nil];
     NSMutableDictionary *dateDict = [NSMutableDictionary dictionaryWithCapacity:1];
     NSDictionary *dict = [NSDictionary dictionaryWithObjects:array forKeys:keys];
     [dateDict setObject:dict forKey:@"date"];
