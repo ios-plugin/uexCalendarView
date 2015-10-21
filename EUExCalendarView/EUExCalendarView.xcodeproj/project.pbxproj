@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1AD56E1BD5EFFE0091D2A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C1AD5701BD5EFFE0091D2A1 /* Localizable.strings */; };
 		6EB62BEF1A9F54D9009C238A /* ABCalendarPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BCF1A9F54D9009C238A /* ABCalendarPicker.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6EB62BF01A9F54D9009C238A /* ABCalendarPickerDefaultDaysProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BD31A9F54D9009C238A /* ABCalendarPickerDefaultDaysProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6EB62BF11A9F54D9009C238A /* ABCalendarPickerDefaultErasProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BD51A9F54D9009C238A /* ABCalendarPickerDefaultErasProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -22,6 +23,16 @@
 		6EE003951A6BFD9E00BD3711 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE003941A6BFD9E00BD3711 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3C1AD56A1BD5EFE40091D2A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EE003891A6BFD9E00BD3711 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C1AD5631BD5EF840091D2A1;
+			remoteInfo = uexCalendarViewBundle;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		6EE0038F1A6BFD9E00BD3711 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +46,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C1AD5641BD5EF840091D2A1 /* uexCalendarView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uexCalendarView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C1AD5661BD5EF840091D2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C1AD56F1BD5EFFE0091D2A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3C1AD5711BD5F00A0091D2A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6EB62BCD1A9F54D9009C238A /* ABCalendarPicker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ABCalendarPicker-Prefix.pch"; sourceTree = "<group>"; };
 		6EB62BCE1A9F54D9009C238A /* ABCalendarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPicker.h; sourceTree = "<group>"; };
 		6EB62BCF1A9F54D9009C238A /* ABCalendarPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPicker.m; sourceTree = "<group>"; };
@@ -90,6 +105,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3C1AD5611BD5EF840091D2A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6EE0038E1A6BFD9E00BD3711 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C1AD5651BD5EF840091D2A1 /* uexCalendarViewBundle */ = {
+			isa = PBXGroup;
+			children = (
+				3C1AD5661BD5EF840091D2A1 /* Info.plist */,
+			);
+			path = uexCalendarViewBundle;
+			sourceTree = "<group>";
+		};
 		6EB62BCB1A9F54D9009C238A /* EUExCalendarView */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +178,9 @@
 		6EE003881A6BFD9E00BD3711 = {
 			isa = PBXGroup;
 			children = (
+				3C1AD5701BD5EFFE0091D2A1 /* Localizable.strings */,
 				6EE003961A6BFD9E00BD3711 /* EUExCalendarView */,
+				3C1AD5651BD5EF840091D2A1 /* uexCalendarViewBundle */,
 				6EE003931A6BFD9E00BD3711 /* Frameworks */,
 				6EE003921A6BFD9E00BD3711 /* Products */,
 			);
@@ -158,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				6EE003911A6BFD9E00BD3711 /* libuexCalendarView.a */,
+				3C1AD5641BD5EF840091D2A1 /* uexCalendarView.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +259,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3C1AD5631BD5EF840091D2A1 /* uexCalendarViewBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C1AD5691BD5EF840091D2A1 /* Build configuration list for PBXNativeTarget "uexCalendarViewBundle" */;
+			buildPhases = (
+				3C1AD5601BD5EF840091D2A1 /* Sources */,
+				3C1AD5611BD5EF840091D2A1 /* Frameworks */,
+				3C1AD5621BD5EF840091D2A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uexCalendarViewBundle;
+			productName = uexCalendarViewBundle;
+			productReference = 3C1AD5641BD5EF840091D2A1 /* uexCalendarView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		6EE003901A6BFD9E00BD3711 /* EUExCalendarView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EE003B41A6BFD9E00BD3711 /* Build configuration list for PBXNativeTarget "EUExCalendarView" */;
@@ -237,6 +287,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3C1AD56B1BD5EFE40091D2A1 /* PBXTargetDependency */,
 			);
 			name = EUExCalendarView;
 			productName = EUExCalendarView;
@@ -251,6 +302,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = hongbao.cui;
+				TargetAttributes = {
+					3C1AD5631BD5EF840091D2A1 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
 			};
 			buildConfigurationList = 6EE0038C1A6BFD9E00BD3711 /* Build configuration list for PBXProject "EUExCalendarView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -258,6 +314,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 6EE003881A6BFD9E00BD3711;
 			productRefGroup = 6EE003921A6BFD9E00BD3711 /* Products */;
@@ -265,11 +322,30 @@
 			projectRoot = "";
 			targets = (
 				6EE003901A6BFD9E00BD3711 /* EUExCalendarView */,
+				3C1AD5631BD5EF840091D2A1 /* uexCalendarViewBundle */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3C1AD5621BD5EF840091D2A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1AD56E1BD5EFFE0091D2A1 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		3C1AD5601BD5EF840091D2A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6EE0038D1A6BFD9E00BD3711 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,7 +367,74 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3C1AD56B1BD5EFE40091D2A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C1AD5631BD5EF840091D2A1 /* uexCalendarViewBundle */;
+			targetProxy = 3C1AD56A1BD5EFE40091D2A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C1AD5701BD5EFFE0091D2A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C1AD56F1BD5EFFE0091D2A1 /* en */,
+				3C1AD5711BD5F00A0091D2A1 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		3C1AD5671BD5EF840091D2A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = $SRCROOT/uexCalendarView;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = uexCalendarViewBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.uexCalendarViewBundle;
+				PRODUCT_MODULE_NAME = uexCalendarView;
+				PRODUCT_NAME = uexCalendarView;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3C1AD5681BD5EF840091D2A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = $SRCROOT/uexCalendarView;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = uexCalendarViewBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.uexCalendarViewBundle;
+				PRODUCT_MODULE_NAME = uexCalendarView;
+				PRODUCT_NAME = uexCalendarView;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		6EE003B21A6BFD9E00BD3711 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -405,6 +548,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3C1AD5691BD5EF840091D2A1 /* Build configuration list for PBXNativeTarget "uexCalendarViewBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C1AD5671BD5EF840091D2A1 /* Debug */,
+				3C1AD5681BD5EF840091D2A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6EE0038C1A6BFD9E00BD3711 /* Build configuration list for PBXProject "EUExCalendarView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

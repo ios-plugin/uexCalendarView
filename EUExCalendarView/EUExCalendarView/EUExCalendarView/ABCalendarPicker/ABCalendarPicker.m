@@ -763,8 +763,8 @@
     
     UIButton *todayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [todayBtn setFrame:CGRectMake(self.frame.size.width - 45, 0, 45, 45)];
-    [todayBtn setTitle:@"今" forState:UIControlStateNormal];
-    [todayBtn setTitle:@"今" forState:UIControlStateHighlighted];
+    [todayBtn setTitle:UEX_LOCALIZEDSTRING(@"今") forState:UIControlStateNormal];
+    [todayBtn setTitle:UEX_LOCALIZEDSTRING(@"今") forState:UIControlStateHighlighted];
     [todayBtn setTitleColor:[EUtility ColorFromString:@"#0073be"] forState:UIControlStateNormal];
     [todayBtn setTitleColor:[EUtility ColorFromString:@"#0073be"] forState:UIControlStateHighlighted];
     [todayBtn addTarget:self action:@selector(todayBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
