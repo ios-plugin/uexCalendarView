@@ -887,7 +887,8 @@
                 if (!animateView) {
                     animateView = [[UIImageView alloc] initWithFrame:CGRectMake(j*buttonWidth-1+8, (i+1)*buttonHeight+buttonHeight, buttonWidth+1+shift-16, 8)];
 //                    [animateView setBackgroundColor:[UIColor redColor]];
-                    [animateView setImage:[UIImage imageNamed:@"uexCalendarView/uexCalendarView_plugin_indicator.png"]];
+                    NSBundle *pluginBundle=[EUtility bundleForPlugin:@"uexCalendarView"];
+                    [animateView setImage:[UIImage imageWithContentsOfFile:[[pluginBundle resourcePath] stringByAppendingPathComponent:@"uexCalendarView_plugin_indicator.png"]]];
                     [animateView setTag:100];
                     [self addSubview:animateView];
                 }else{

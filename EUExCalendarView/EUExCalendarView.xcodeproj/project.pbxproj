@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3C5190A71BE05EB300D6B67D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C5190A91BE05EB300D6B67D /* Localizable.strings */; };
+		42A5BE7C1C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A5BE781C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@2x.png */; };
+		42A5BE7D1C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A5BE791C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@3x.png */; };
+		42A5BE7E1C2BC7B2000D8B4E /* uexCalendarView_plugin_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A5BE7A1C2BC7B2000D8B4E /* uexCalendarView_plugin_up@2x.png */; };
+		42A5BE7F1C2BC7B2000D8B4E /* uexCalendarView_plugin_up@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A5BE7B1C2BC7B2000D8B4E /* uexCalendarView_plugin_up@3x.png */; };
 		6EB62BEF1A9F54D9009C238A /* ABCalendarPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BCF1A9F54D9009C238A /* ABCalendarPicker.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6EB62BF01A9F54D9009C238A /* ABCalendarPickerDefaultDaysProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BD31A9F54D9009C238A /* ABCalendarPickerDefaultDaysProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6EB62BF11A9F54D9009C238A /* ABCalendarPickerDefaultErasProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BD51A9F54D9009C238A /* ABCalendarPickerDefaultErasProvider.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -49,6 +53,10 @@
 		3C1AD5641BD5EF840091D2A1 /* uexCalendarView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uexCalendarView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5190A81BE05EB300D6B67D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3C5190AA1BE05EB400D6B67D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		42A5BE781C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uexCalendarView_plugin_indicator@2x.png"; sourceTree = "<group>"; };
+		42A5BE791C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uexCalendarView_plugin_indicator@3x.png"; sourceTree = "<group>"; };
+		42A5BE7A1C2BC7B2000D8B4E /* uexCalendarView_plugin_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uexCalendarView_plugin_up@2x.png"; sourceTree = "<group>"; };
+		42A5BE7B1C2BC7B2000D8B4E /* uexCalendarView_plugin_up@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uexCalendarView_plugin_up@3x.png"; sourceTree = "<group>"; };
 		6EB62BCD1A9F54D9009C238A /* ABCalendarPicker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ABCalendarPicker-Prefix.pch"; sourceTree = "<group>"; };
 		6EB62BCE1A9F54D9009C238A /* ABCalendarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPicker.h; sourceTree = "<group>"; };
 		6EB62BCF1A9F54D9009C238A /* ABCalendarPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPicker.m; sourceTree = "<group>"; };
@@ -123,6 +131,10 @@
 		3C1AD5651BD5EF840091D2A1 /* uexCalendarViewBundle */ = {
 			isa = PBXGroup;
 			children = (
+				42A5BE781C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@2x.png */,
+				42A5BE791C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@3x.png */,
+				42A5BE7A1C2BC7B2000D8B4E /* uexCalendarView_plugin_up@2x.png */,
+				42A5BE7B1C2BC7B2000D8B4E /* uexCalendarView_plugin_up@3x.png */,
 				3C5190A91BE05EB300D6B67D /* Localizable.strings */,
 			);
 			path = uexCalendarViewBundle;
@@ -326,7 +338,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A5BE7F1C2BC7B2000D8B4E /* uexCalendarView_plugin_up@3x.png in Resources */,
+				42A5BE7E1C2BC7B2000D8B4E /* uexCalendarView_plugin_up@2x.png in Resources */,
+				42A5BE7D1C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@3x.png in Resources */,
 				3C5190A71BE05EB300D6B67D /* Localizable.strings in Resources */,
+				42A5BE7C1C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
 				CONFIGURATION_BUILD_DIR = $SRCROOT/uexCalendarView;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -410,10 +426,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
 				CONFIGURATION_BUILD_DIR = $SRCROOT/uexCalendarView;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "";

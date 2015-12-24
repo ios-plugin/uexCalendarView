@@ -38,7 +38,7 @@
 }
 -(void)open:(NSMutableArray *)array{
     if ([array count] ==0) {
-        NSLog(@"params is error!!");
+       
         return;
     }
     NSDictionary *dict = [[array objectAtIndex:0] JSONValue];

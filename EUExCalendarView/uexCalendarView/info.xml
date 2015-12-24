@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <uexplugins>
     <plugin
-        uexName="uexCalendarView" version="3.0.2" build="2">
-        <info>2:删除info.plist</info>
+        uexName="uexCalendarView" version="3.0.3" build="3">
+        <info>3:添加IDE支持</info>
+        <build>2:删除info.plist</build>
         <build>1:添加国际化支持</build>
         <build>0:仿恋爱笔记日历</build>
     </plugin>
