@@ -27,6 +27,7 @@
     if (self.calendarPicker) {
         [self.calendarPicker removeFromSuperview];
         self.calendarPicker = nil;
+        
     }
     [super clean];
 }
@@ -89,6 +90,13 @@
     return destDateString;
 }
 //ABCalendarPickerDelegateProtocol
+- (BOOL)calendarPicker:(ABCalendarPicker*)calendarPicker
+       shoudSelectDate:(NSDate*)date
+             withState:(ABCalendarPickerState)state{
+    
+    return calendarPicker.showAlert;
+    
+}
 - (void)calendarPicker:(ABCalendarPicker*)calendarPicker
           dateSelected:(NSDate*)date
              withState:(ABCalendarPickerState)state{

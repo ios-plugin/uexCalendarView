@@ -495,6 +495,7 @@
 
 - (void)tapDetected:(UITapGestureRecognizer *)recognizer
 {
+    self.showAlert = YES;
     CGPoint point = [self convertPoint:[recognizer locationInView:recognizer.view] toView:self.mainTileView];
     
     for (int i = 0 ; i < [self.controls count]; i++)
@@ -1111,7 +1112,12 @@
 
 - (void)anySwiped:(UISwipeGestureRecognizer *)gestureRecognizer
 {
+    
+    if (gestureRecognizer.direction == UISwipeGestureRecognizerDirectionDown || gestureRecognizer.direction == UISwipeGestureRecognizerDirectionUp) {
+        self.showAlert = NO;
+    }
     if (!self.swipeNavigationEnabled)
+        
         return;
     
     BOOL canDiffuse = [self.currentProvider canDiffuse];
@@ -1245,6 +1251,7 @@
         topRecognizer.cancelsTouchesInView = YES;
         
         UISwipeGestureRecognizer * bottomRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(anySwiped:)];
+        
         bottomRecognizer.direction = UISwipeGestureRecognizerDirectionUp;
         bottomRecognizer.cancelsTouchesInView = YES;
         
@@ -1255,6 +1262,7 @@
         UISwipeGestureRecognizer * rightRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(anySwiped:)];
         rightRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
         rightRecognizer.cancelsTouchesInView = YES;
+        
         
         [self addGestureRecognizer:topRecognizer];
         [self addGestureRecognizer:bottomRecognizer];
@@ -1561,10 +1569,17 @@
     UITapGestureRecognizer * singleTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetected:)];
     UITapGestureRecognizer * doubleTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(titleClicked:)];
     doubleTapRecognizer.numberOfTouchesRequired = 2;
+    [singleTapRecognizer requireGestureRecognizerToFail:doubleTapRecognizer];
     [self addGestureRecognizer:singleTapRecognizer];
     [self addGestureRecognizer:doubleTapRecognizer];
 }
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
 
+{
+    
+    return YES;
+    
+}
 - (void)initWithDefaultProviders
 {
     [self initWithStyleProvider:[[ABCalendarPickerDefaultStyleProvider alloc] init]
