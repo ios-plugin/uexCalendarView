@@ -1112,7 +1112,7 @@
 
 - (void)anySwiped:(UISwipeGestureRecognizer *)gestureRecognizer
 {
-    
+    self.showAlert = YES;
     if (gestureRecognizer.direction == UISwipeGestureRecognizerDirectionDown || gestureRecognizer.direction == UISwipeGestureRecognizerDirectionUp) {
         self.showAlert = NO;
     }
