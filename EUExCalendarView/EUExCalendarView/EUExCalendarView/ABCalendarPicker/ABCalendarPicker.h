@@ -49,9 +49,7 @@
 @property (nonatomic) BOOL bottomExpanding;
 /** Flag means is swipe enabled for navigation. */
 @property (nonatomic) BOOL swipeNavigationEnabled;
-//-------------------------------
-@property(nonatomic) BOOL showAlert;
-/// ----------------------------------------------------------------
+
 /// @name Customization
 /// ----------------------------------------------------------------
 

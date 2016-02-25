@@ -14,12 +14,13 @@
     
 }
 @property (retain, nonatomic) ABCalendarPicker *calendarPicker;
+@property BOOL isAlert;
 @end
 @implementation EUExCalendarView
 -(id)initWithBrwView:(EBrowserView *)eInBrwView{
     self = [super initWithBrwView:eInBrwView];
     if (self) {
-        
+        self.isAlert = NO;
     }
     return self;
 }
@@ -69,6 +70,7 @@
     return date;
 }
 -(void)setSelectedDate:(NSMutableArray *)argurs{
+    self.isAlert = YES;
     if ([argurs count] ==0) {
         NSLog(@"params is error!!");
         return;
@@ -90,13 +92,6 @@
     return destDateString;
 }
 //ABCalendarPickerDelegateProtocol
-- (BOOL)calendarPicker:(ABCalendarPicker*)calendarPicker
-       shoudSelectDate:(NSDate*)date
-             withState:(ABCalendarPickerState)state{
-    
-    return calendarPicker.showAlert;
-    
-}
 - (void)calendarPicker:(ABCalendarPicker*)calendarPicker
           dateSelected:(NSDate*)date
              withState:(ABCalendarPickerState)state{
@@ -107,9 +102,12 @@
     NSMutableDictionary *dateDict = [NSMutableDictionary dictionaryWithCapacity:1];
     NSDictionary *dict = [NSDictionary dictionaryWithObjects:array forKeys:keys];
     [dateDict setObject:dict forKey:@"date"];
-    NSString *jsonStr = [NSString stringWithFormat:@"{\"date\":{\"year\":\"%@\",\"month\":\"%@\",\"day\":\"%@\"}}",[array objectAtIndex:0],[array objectAtIndex:1],[array objectAtIndex:2]];
-    NSString *json = [NSString stringWithFormat:@"uexCalendarView.onItemClick('%@')",jsonStr];
-//    [self.meBrwView stringByEvaluatingJavaScriptFromString:json];
-    [EUtility brwView:self.meBrwView evaluateScript:json];
+    if (self.isAlert) {
+        NSString *jsonStr = [NSString stringWithFormat:@"{\"date\":{\"year\":\"%@\",\"month\":\"%@\",\"day\":\"%@\"}}",[array objectAtIndex:0],[array objectAtIndex:1],[array objectAtIndex:2]];
+        NSString *json = [NSString stringWithFormat:@"uexCalendarView.onItemClick('%@')",jsonStr];
+        [EUtility brwView:self.meBrwView evaluateScript:json];
+    }
+    self.isAlert = NO;
+    
 }
 @end

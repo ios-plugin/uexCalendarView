@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <uexplugins>
     <plugin
-        uexName="uexCalendarView" version="3.0.4" build="4">
-        <info>4:修复uexCalendarView切换月份时执行click事件的bug</info>
+        uexName="uexCalendarView" version="3.0.5" build="5">
+        <info>5:修复uexCalendarView切换年份时触发click事件的bug</info>
+        <build>4:修复uexCalendarView切换月份时触发click事件的bug</build>
         <build>3:添加IDE支持</build>
         <build>2:删除info.plist</build>
         <build>1:添加国际化支持</build>

@@ -495,7 +495,7 @@
 
 - (void)tapDetected:(UITapGestureRecognizer *)recognizer
 {
-    self.showAlert = YES;
+    
     CGPoint point = [self convertPoint:[recognizer locationInView:recognizer.view] toView:self.mainTileView];
     
     for (int i = 0 ; i < [self.controls count]; i++)
@@ -1112,10 +1112,7 @@
 
 - (void)anySwiped:(UISwipeGestureRecognizer *)gestureRecognizer
 {
-    self.showAlert = YES;
-    if (gestureRecognizer.direction == UISwipeGestureRecognizerDirectionDown || gestureRecognizer.direction == UISwipeGestureRecognizerDirectionUp) {
-        self.showAlert = NO;
-    }
+   
     if (!self.swipeNavigationEnabled)
         
         return;
