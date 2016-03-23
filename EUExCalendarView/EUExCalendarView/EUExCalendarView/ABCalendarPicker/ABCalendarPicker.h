@@ -77,7 +77,7 @@
     calendarPicker.calendar = calendar;
  */
 @property (strong,nonatomic) NSCalendar * calendar;
-
+@property BOOL isShow;
 /// ----------------------------------------------------------------
 /// @name Accessing current state
 /// ----------------------------------------------------------------

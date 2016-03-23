@@ -157,14 +157,17 @@
     
     //if (self.currentState == ABCalendarPickerStateDays
     //    || self.currentState == ABCalendarPickerStateWeekdays)
-    //{
+    if (self.isShow ) {
         if ([(id)self.delegate respondsToSelector:@selector(calendarPicker:dateSelected:withState:)])
         {
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 [self.delegate calendarPicker:self dateSelected:self.highlightedDate withState:self.currentState];
             }];
         }
-    //}
+        
+    }
+    self.isShow = NO;
+        //}
 }
 
 - (ABViewPool*)buttonsPool
@@ -495,7 +498,7 @@
 
 - (void)tapDetected:(UITapGestureRecognizer *)recognizer
 {
-    
+     self.isShow = YES;
     CGPoint point = [self convertPoint:[recognizer locationInView:recognizer.view] toView:self.mainTileView];
     
     for (int i = 0 ; i < [self.controls count]; i++)
@@ -772,6 +775,7 @@
     [self addSubview:todayBtn];
 }
 -(void)todayBtnClicked:(id)sender{
+    self.isShow = YES;
     [self setDate:[NSDate date] andState:ABCalendarPickerStateDays animated:YES];
 }
 - (void)updateArrowsForProvider:(id<ABCalendarPickerDateProviderProtocol>)provider
@@ -1620,6 +1624,7 @@
 
 - (void)setDate:(NSDate*)date andState:(ABCalendarPickerState)state animated:(BOOL)animated
 {
+    self.isShow = YES;
     self.highlightedDate = date;
     [self setState:state animated:animated];
 }
