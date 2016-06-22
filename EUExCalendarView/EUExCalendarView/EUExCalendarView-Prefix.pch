@@ -8,5 +8,6 @@
 #import <Foundation/Foundation.h>
 #import "EUtility.h"
 #import <UIKit/UIKit.h>
+#import <AppCanKit/AppCanKit.h>
 #define UEX_LOCALIZEDSTRING(...) [EUtility uexPlugin:@"uexCalendarView" localizedString:__VA_ARGS__,nil]
 #endif

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214053A21D1A7A3B0003A759 /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214053A11D1A7A3B0003A759 /* AppCanKit.framework */; };
 		3C5190A71BE05EB300D6B67D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C5190A91BE05EB300D6B67D /* Localizable.strings */; };
 		42A5BE7C1C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A5BE781C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@2x.png */; };
 		42A5BE7D1C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A5BE791C2BC7B2000D8B4E /* uexCalendarView_plugin_indicator@3x.png */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		214053A11D1A7A3B0003A759 /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
 		3C1AD5641BD5EF840091D2A1 /* uexCalendarView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uexCalendarView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5190A81BE05EB300D6B67D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3C5190AA1BE05EB400D6B67D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -89,7 +91,6 @@
 		6EE003911A6BFD9E00BD3711 /* libuexCalendarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexCalendarView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE003941A6BFD9E00BD3711 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6EE003981A6BFD9E00BD3711 /* EUExCalendarView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EUExCalendarView-Prefix.pch"; sourceTree = "<group>"; };
-		6EE003BB1A6BFE1100BD3711 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
 		6EE003BC1A6BFE1100BD3711 /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
 		6EE003BD1A6BFE1100BD3711 /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
 		6EE003BE1A6BFE1100BD3711 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -121,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214053A21D1A7A3B0003A759 /* AppCanKit.framework in Frameworks */,
 				6EE003951A6BFD9E00BD3711 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,7 +234,7 @@
 		6EE003BA1A6BFE1100BD3711 /* engineHeader */ = {
 			isa = PBXGroup;
 			children = (
-				6EE003BB1A6BFE1100BD3711 /* EUExBase.h */,
+				214053A11D1A7A3B0003A759 /* AppCanKit.framework */,
 				6EE003BC1A6BFE1100BD3711 /* EUExBaseDefine.h */,
 				6EE003BD1A6BFE1100BD3711 /* EUtility.h */,
 				6EE003BE1A6BFE1100BD3711 /* JSON.h */,
@@ -527,6 +529,10 @@
 				);
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/EUExCalendarView.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExCalendarView/engineHeader",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EUExCalendarView/EUExCalendarView-Prefix.pch";
 				ONLY_ACTIVE_ARCH = NO;
@@ -546,6 +552,10 @@
 				);
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/EUExCalendarView.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExCalendarView/engineHeader",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EUExCalendarView/EUExCalendarView-Prefix.pch";
 				ONLY_ACTIVE_ARCH = NO;
