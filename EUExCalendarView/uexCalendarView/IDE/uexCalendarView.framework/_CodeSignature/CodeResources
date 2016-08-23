@@ -6,42 +6,42 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		Mb9xPSbJ2VzQLs/359+abjTKXEI=
+		6S2LfS0YobYrKA0+Mtjz1/Q0aQc=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		JKbXoT98W7zj86Z2W3qbeHZe/kE=
+		VccYRc8+LJpEK2ajGtgIir/pOpk=
 		</data>
-		<key>uexCalendarView.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
+		<key>uexCalendarView.bundle/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ywEq1wrcxP93cOSLdLFRVr1iHlQ=
+			KtAIDy51Yb+XFXsvECIrpcCFOxE=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uexCalendarView.bundle/Contents/Resources/uexCalendarView_plugin_indicator@2x.png</key>
+		<key>uexCalendarView.bundle/uexCalendarView_plugin_indicator@2x.png</key>
 		<data>
-		pLqJGsth+PZK+KsqNYsD7zw38IE=
+		wwYS8KyfCODfiFjJtp5fIM58aIA=
 		</data>
-		<key>uexCalendarView.bundle/Contents/Resources/uexCalendarView_plugin_indicator@3x.png</key>
+		<key>uexCalendarView.bundle/uexCalendarView_plugin_indicator@3x.png</key>
 		<data>
-		cI0w52Poy6UNeAAxEnSdTpOWtlY=
+		N+mxyInfstUQcxyxxaG3Wrm/m4g=
 		</data>
-		<key>uexCalendarView.bundle/Contents/Resources/uexCalendarView_plugin_up@2x.png</key>
+		<key>uexCalendarView.bundle/uexCalendarView_plugin_up@2x.png</key>
 		<data>
-		cIGcq07KgkifDqcWMrpRjr2nMsA=
+		M6V5PXB0zU/Nx05k8CmiwaTUpuQ=
 		</data>
-		<key>uexCalendarView.bundle/Contents/Resources/uexCalendarView_plugin_up@3x.png</key>
+		<key>uexCalendarView.bundle/uexCalendarView_plugin_up@3x.png</key>
 		<data>
-		oUJwGPfTuRSgYos3U2TTW3+awik=
+		LY+SoHxx3Z0ir8Op9tuEcNyhiuQ=
 		</data>
-		<key>uexCalendarView.bundle/Contents/Resources/zh-Hans.lproj/Localizable.strings</key>
+		<key>uexCalendarView.bundle/zh-Hans.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l2S8f7MjK7ZjLAaJ4fPuhiWWriI=
+			r6/v/vSm78ysDp3G6QGp+HpBags=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -50,39 +50,82 @@
 	<key>files2</key>
 	<dict>
 		<key>embedded.mobileprovision</key>
-		<data>
-		JKbXoT98W7zj86Z2W3qbeHZe/kE=
-		</data>
-		<key>uexCalendarView.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ywEq1wrcxP93cOSLdLFRVr1iHlQ=
+			VccYRc8+LJpEK2ajGtgIir/pOpk=
+			</data>
+			<key>hash2</key>
+			<data>
+			ejCBtnGtWqhlrYI4GRjoMJxaexgdSnhjWGPR+Vc9frw=
+			</data>
+		</dict>
+		<key>uexCalendarView.bundle/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KtAIDy51Yb+XFXsvECIrpcCFOxE=
+			</data>
+			<key>hash2</key>
+			<data>
+			aHbJXn1f7oYVWG09pBTtfAVMBcZ+WlhNs+UfiDqWQng=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uexCalendarView.bundle/Contents/Resources/uexCalendarView_plugin_indicator@2x.png</key>
-		<data>
-		pLqJGsth+PZK+KsqNYsD7zw38IE=
-		</data>
-		<key>uexCalendarView.bundle/Contents/Resources/uexCalendarView_plugin_indicator@3x.png</key>
-		<data>
-		cI0w52Poy6UNeAAxEnSdTpOWtlY=
-		</data>
-		<key>uexCalendarView.bundle/Contents/Resources/uexCalendarView_plugin_up@2x.png</key>
-		<data>
-		cIGcq07KgkifDqcWMrpRjr2nMsA=
-		</data>
-		<key>uexCalendarView.bundle/Contents/Resources/uexCalendarView_plugin_up@3x.png</key>
-		<data>
-		oUJwGPfTuRSgYos3U2TTW3+awik=
-		</data>
-		<key>uexCalendarView.bundle/Contents/Resources/zh-Hans.lproj/Localizable.strings</key>
+		<key>uexCalendarView.bundle/uexCalendarView_plugin_indicator@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l2S8f7MjK7ZjLAaJ4fPuhiWWriI=
+			wwYS8KyfCODfiFjJtp5fIM58aIA=
+			</data>
+			<key>hash2</key>
+			<data>
+			leBpnr7q3/pcKz6uTgzN4R+v+OYzcWoy5tJrYjXcOq0=
+			</data>
+		</dict>
+		<key>uexCalendarView.bundle/uexCalendarView_plugin_indicator@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N+mxyInfstUQcxyxxaG3Wrm/m4g=
+			</data>
+			<key>hash2</key>
+			<data>
+			aqSGv7ZbOfRqukSUCCHay6VDsfgmcctWqJoN12ADxnk=
+			</data>
+		</dict>
+		<key>uexCalendarView.bundle/uexCalendarView_plugin_up@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M6V5PXB0zU/Nx05k8CmiwaTUpuQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			PzFf+UatzYdyIvEEFeLx+1GJA0ZGf5tKJZ4hvbB8JSg=
+			</data>
+		</dict>
+		<key>uexCalendarView.bundle/uexCalendarView_plugin_up@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LY+SoHxx3Z0ir8Op9tuEcNyhiuQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			frOR17VH+R/6FqZuN6rykgMC02wSi0KmI5y8IQXWGEE=
+			</data>
+		</dict>
+		<key>uexCalendarView.bundle/zh-Hans.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r6/v/vSm78ysDp3G6QGp+HpBags=
+			</data>
+			<key>hash2</key>
+			<data>
+			6mkWj6ioF2n6zTar9HlbottsCD3VDC7j4RV/Felq7ZQ=
 			</data>
 			<key>optional</key>
 			<true/>
