@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
-  <plugin uexName="uexCalendarView" version="3.0.6" build="6">
-    <info>6: IDE证书更新</info>
-    <build>5: 修复uexCalendarView切换年份时触发click事件的bug</build>
-    <build>4: 修复uexCalendarView切换月份时触发click事件的bug</build>
-    <build>3: 添加IDE支持</build>
-    <build>2: 删除info.plist</build>
-    <build>1: 添加国际化支持</build>
-    <build>0: 仿恋爱笔记日历</build>
-  </plugin>
+    <plugin
+        uexName="uexCalendarView" version="4.0.0" build="0">
+        <info>0: 仿恋爱笔记日历</info>
+    </plugin>
 </uexplugins>
+

@@ -17,13 +17,13 @@
 
 @end
 @implementation EUExCalendarView
--(id)initWithBrwView:(EBrowserView *)eInBrwView{
-    self = [super initWithBrwView:eInBrwView];
-    if (self) {
-
-    }
-    return self;
-}
+//-(id)initWithBrwView:(EBrowserView *)eInBrwView{
+//    self = [super initWithBrwView:eInBrwView];
+//    if (self) {
+//
+//    }
+//    return self;
+//}
 -(void)clean{
     if (self.calendarPicker) {
         [self.calendarPicker removeFromSuperview];
@@ -54,7 +54,8 @@
         [calendarPicker release];
         [self.calendarPicker setDelegate:self];
     }
-    [EUtility brwView:self.meBrwView addSubview:self.calendarPicker];
+    //[EUtility brwView:self.meBrwView addSubview:self.calendarPicker];
+    [[self.webViewEngine webView] addSubview:self.calendarPicker];
 }
 -(void)close:(NSMutableArray *)array{
     if (self.calendarPicker) {
@@ -103,9 +104,9 @@
     NSDictionary *dict = [NSDictionary dictionaryWithObjects:array forKeys:keys];
     [dateDict setObject:dict forKey:@"date"];
     NSString *jsonStr = [NSString stringWithFormat:@"{\"date\":{\"year\":\"%@\",\"month\":\"%@\",\"day\":\"%@\"}}",[array objectAtIndex:0],[array objectAtIndex:1],[array objectAtIndex:2]];
-    NSString *json = [NSString stringWithFormat:@"uexCalendarView.onItemClick('%@')",jsonStr];
-    [EUtility brwView:self.meBrwView evaluateScript:json];
-    
+   // NSString *json = [NSString stringWithFormat:@"uexCalendarView.onItemClick('%@')",jsonStr];
+    //[EUtility brwView:self.meBrwView evaluateScript:json];
+    [self.webViewEngine callbackWithFunctionKeyPath:@"uexCalendarView.onItemClick" arguments:ACArgsPack(jsonStr)];
     
 }
 @end
